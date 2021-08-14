@@ -44,9 +44,9 @@
                 android:hapticFeedbackEnabled="true"
                 android:insetLeft="0dp"
                 android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="C"
                 android:textColor="@color/white"
-                style="@android:style/Widget.Material.Button.Borderless.Colored"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -75,7 +75,8 @@
                 android:text="/"
                 android:textColor="@color/white"
                 android:textSize="25dp"
-                app:cornerRadius="0px" />
+                app:cornerRadius="0px"
+                tools:ignore="TextContrastCheck" />
 
             <Button
                 android:id="@+id/remove"
@@ -87,13 +88,15 @@
                 android:insetBottom="0dp"
                 android:isScrollContainer="false"
                 android:textColor="@color/white"
+                android:text=""
                 android:textSize="25dp"
                 app:cornerRadius="0px"
                 app:icon="@drawable/long_arrow_alt_left_solid"
                 app:iconGravity="textStart"
                 app:iconPadding="0dp"
                 app:iconSize="40dp"
-                app:iconTint="#FFFFFF" />
+                app:iconTint="#FFFFFF"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
@@ -114,6 +117,7 @@
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+
                 android:text="7"
                 android:textColor="@color/white"
                 android:textSize="25dp"
@@ -144,6 +148,7 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/minus"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -162,6 +167,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/input_4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -173,6 +179,7 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/input_5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -184,6 +191,7 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/input_6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -195,6 +203,7 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/plus"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -213,6 +222,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/input_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -224,17 +234,7 @@
                 app:cornerRadius="0px" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                android:text="3"
-                android:textColor="@color/white"
-                android:textSize="25dp"
-                app:cornerRadius="0px" />
-
-            <Button
+                android:id="@+id/input_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -246,6 +246,19 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/input_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                app:cornerRadius="0px" />
+
+            <Button
+                android:id="@+id/bracket"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -266,6 +279,7 @@
             android:padding="0px">
 
             <Button
+                android:id="@+id/input_0"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -277,6 +291,7 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/dot"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -288,6 +303,7 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/plus_minus"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -299,6 +315,7 @@
                 app:cornerRadius="0px" />
 
             <Button
+                android:id="@+id/equal"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -307,7 +324,8 @@
                 android:text="="
                 android:textColor="@color/white"
                 android:textSize="25dp"
-                app:cornerRadius="0px" />
+                app:cornerRadius="0px"
+                tools:ignore="TextContrastCheck" />
 
         </LinearLayout>
     </LinearLayout>
