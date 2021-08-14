@@ -9,17 +9,31 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/display_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#A09595"
+        android:backgroundTint="#A09595"
+        android:gravity="end|center"
+        android:textColor="#FFF5EE"
+        android:textSize="45dp" />
+
+    <TextView
         android:id="@+id/display"
         android:layout_width="match_parent"
-        android:layout_height="326dp"
+        android:layout_height="150dp"
+        android:background="#A09595"
+        android:backgroundTint="#A09595"
         android:gravity="end|center"
         android:text="0"
+        android:textColor="#FFF5EE"
         android:textSize="45dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:backgroundTint="#00FFFFFF"
         android:gravity="bottom|center"
         android:orientation="vertical">
 
@@ -28,9 +42,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
             android:includeFontPadding="false"
             android:lineSpacingExtra="0dp"
+            android:orientation="horizontal"
 
             android:padding="0dp">
 
@@ -41,14 +55,16 @@
                 android:layout_margin="0dp"
                 android:layout_marginBottom="0px"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
+                android:backgroundTint="#1A8A8A8A"
                 android:hapticFeedbackEnabled="true"
-                android:insetLeft="0dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="C"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
-                app:cornerRadius="0px" />
+                app:cornerRadius="0px"
+                app:iconPadding="0dp" />
 
             <Button
                 android:id="@+id/mul"
@@ -56,10 +72,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="0px"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="*"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -68,12 +85,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/primary"
+                android:background="#1A8A8A8A"
                 android:backgroundTint="@color/primary"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="/"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px"
                 tools:ignore="TextContrastCheck" />
@@ -83,18 +100,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/primary"
+                android:background="#99A79494"
+                android:backgroundTint="#99A79494"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:isScrollContainer="false"
-                android:textColor="@color/white"
                 android:text=""
-                android:textSize="25dp"
+                android:textColor="@color/white"
                 app:cornerRadius="0px"
-                app:icon="@drawable/long_arrow_alt_left_solid"
+                app:icon="@drawable/union"
                 app:iconGravity="textStart"
                 app:iconPadding="0dp"
-                app:iconSize="40dp"
                 app:iconTint="#FFFFFF"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -104,9 +120,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal"
             android:includeFontPadding="false"
             android:lineSpacingExtra="0dp"
+            android:orientation="horizontal"
 
             android:padding="0px">
 
@@ -115,11 +131,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#298A8A8A"
+
+                android:backgroundTint="#298A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-
                 android:text="7"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -128,10 +146,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#298A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="8"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -140,10 +159,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#298A8A8A"
+                android:backgroundTint="#298A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="9"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -152,6 +173,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#BFA09595"
+                android:backgroundTint="#BFA09595"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="-"
@@ -171,10 +194,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="4"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -183,10 +207,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="5"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -195,10 +220,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="6"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -207,6 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#99A79494"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="+"
@@ -226,10 +253,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#298A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="1"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -238,10 +266,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#298A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="2"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -250,10 +279,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#298A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="3"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -262,6 +292,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#BFA09595"
+                android:backgroundTint="#BFA09595"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="()"
@@ -283,10 +315,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="0"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -295,10 +328,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="."
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -307,10 +341,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#1A8A8A8A"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="+/-"
-                android:textColor="@color/white"
+                android:textColor="#3D000000"
                 android:textSize="25dp"
                 app:cornerRadius="0px" />
 
@@ -319,6 +354,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#988D8D"
+                android:backgroundTint="#988D8D"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:text="="
